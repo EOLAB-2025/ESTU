@@ -1,0 +1,15 @@
+#define INT_MEM1_DEPTH 32768
+#define INT_MEM2_DEPTH 32768
+#define INPUT_CHANNELS 128 // It is equal to 16 (input channels) times 8 (bytes per channel)
+#define WEIGHTS_SIZE_1 218496
+#define WEIGHTS_SIZE_2 179072
+#define TIME 50
+#define INT_MEM_1_ADDR 1048576
+#define INT_MEM_2_ADDR INT_MEM_1_ADDR + INT_MEM1_DEPTH
+#define INPUT_BUFFER_ADDR INT_MEM_2_ADDR + INT_MEM2_DEPTH
+
+#define INT_MEM1_ID 0
+#define INT_MEM2_ID 1
+#define INPUT_BUFFER_ID 2
+#define NUM_INSTRUCTIONS 150
+#define OFFSET_CHANNELS 16

@@ -1,0 +1,57 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Thu Jun 12 18:02:24 2025
+[*]
+[dumpfile] "/home/mauro/Documenti/Borsa/Spikeformer1/work/tb_estu_postsyn.vcd"
+[dumpfile_mtime] "Thu Jun 12 17:50:57 2025"
+[dumpfile_size] 315706375
+[savefile] "/home/mauro/Documenti/Borsa/Spikeformer1/work/tb_psim.gtkw"
+[timestart] 0
+[size] 2560 1393
+[pos] -2611 330
+*-17.700001 894000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_estu.
+[treeopen] tb_estu.dut.
+[sst_width] 297
+[signals_width] 262
+[sst_expanded] 1
+[sst_vpaned_height] 946
+@28
+tb_estu.dut.clk
+tb_estu.dut.rst
+tb_estu.dut.start_inference
+tb_estu.dut.\u_fsm_estu.state[0]
+tb_estu.dut.\u_fsm_estu.state[1]
+tb_estu.dut.\u_fsm_estu.state[2]
+tb_estu.dut.\u_fsm_estu.state[3]
+tb_estu.dut.valid_instr
+[color] 2
+tb_estu.dut.\mode[0]
+[color] 2
+tb_estu.dut.\mode[1]
+[color] 2
+tb_estu.dut.\mode[2]
+[color] 2
+tb_estu.dut.\mode[3]
+[color] 2
+tb_estu.dut.\mode[4]
+tb_estu.dut.en
+tb_estu.dut.en_rd_addr_gen
+tb_estu.dut.\r_en_ext[0]
+tb_estu.dut.\r_en_ext[1]
+tb_estu.dut.\r_en_ext[2]
+tb_estu.dut.\r_en_ext[3]
+tb_estu.dut.wr_en_sm1
+tb_estu.dut.\data_in_sm1[0]
+tb_estu.dut.\data_in_sm1[1]
+tb_estu.dut.\data_in_sm1[2]
+tb_estu.dut.\data_in_sm1[3]
+[color] 2
+tb_estu.dut.wr_en_sm2
+tb_estu.dut.\data_in_sm2[0]
+tb_estu.dut.\data_in_sm2[1]
+tb_estu.dut.\data_in_sm2[2]
+@29
+tb_estu.dut.\data_in_sm2[3]
+[pattern_trace] 1
+[pattern_trace] 0
