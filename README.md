@@ -134,7 +134,7 @@ python3 conv_json_to_hex.py data/golden_txns.json   # → data/golden_txns.hex
 
 **Instruction memory (microcode):**
 Run `scripts/Python/InstructionGenerator/instruction_generator.py`.
-It produces `instr_mem.txt`, used to initialize the accelerator’s instruction BRAM.
+It produces `instr_mem.txt`, used to initialize the accelerator’s instruction memory BRAM.
 
 **Flash image:**
 The notebook creates `scripts/Python/sim/mem/flash.txt`.
