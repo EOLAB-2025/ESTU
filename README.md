@@ -1,10 +1,8 @@
-# ESTU — Enabling Spiking Transformers on Ultra-Low-Power FPGAs (iCE40UP5K)
+# ESTU — Enabling Spiking Transformers on Ultra-Low-Power FPGAs
 
 **ESTU** is a tiny SoC for edge AI that runs a **spiking transformer** on a Lattice **iCE40UP5K**.  
 It combines a microcode-programmable accelerator, a **SERV** RISC-V softcore, and configurable **encoding/decoding** slots.  
 This repo contains RTL, firmware, simulation testbenches, and scripts to build, simulate, flash, and run ESTU on hardware.
-
-> This code accompanies the work “ESTU: Enabling Spiking Transformers on Ultra-Low-Power FPGAs (TCAS-II)”.
 
 ---
 
