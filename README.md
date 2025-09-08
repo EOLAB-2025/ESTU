@@ -112,7 +112,7 @@ make listen    # edit the serial port in the Makefile if needed (in order to cha
 
 ## Generate Model → HW Initialization files
 
-Run `scripts/Python/IntegerSpikeTransformer.ipynb`. It emits:
+Run `scripts/Python/IntegerSpikeTransformer.ipynb`. It produce:
 
 * **Delta-modulator init files** → `scripts/Python/delta/`
 * **Weights** for integer memories → `scripts/Python/weights/`
