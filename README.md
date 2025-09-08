@@ -11,7 +11,7 @@ This repo contains RTL, firmware, simulation testbenches, and scripts to build, 
 - [Prerequisites](#prerequisites)
 - [Environment Setup](#environment-setup)
 - [Quick Start](#quick-start)
-- [Generate Model → HW Artifacts](#generate-model--hw-artifacts)
+- [Generate Model → HW Initialization files](#generate-model--hw-artifacts)
 - [Simulation](#simulation)
 - [Build, P&R and Program](#build-pr-and-program)
 - [Firmware Overview](#firmware-overview)
