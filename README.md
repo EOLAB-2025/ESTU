@@ -274,7 +274,7 @@ DEV_WRITE(CLOCK_GATE_CTRL, 1);
 * `psimulate` — post-synthesis simulation
 * `build-best` — sweep seeds in place and route process
 * `listen` — open UART @ 3 MBaud (minicom)
-* `clean` / `clean-logs` — cleanup artifacts and logs
+* `clean` / `clean-logs` — cleanup 
 
 ---
 
