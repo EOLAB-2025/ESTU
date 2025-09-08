@@ -80,10 +80,6 @@ MAIN\_ESTU/
 # Download the tar.xz for Linux x86-64 from the official releases page
 tar xf oss-cad-suite-*.tar.xz -C $HOME
 source $HOME/oss-cad-suite/environment
-
-# Sanity checks
-yosys -V
-nextpnr-ice40 --version
 ````
 
 ### Build the RISC-V toolchain (ELF/Newlib)
