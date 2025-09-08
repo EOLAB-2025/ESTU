@@ -170,7 +170,7 @@ make simulate VFLAGS="-DVERIFICATION"
 # Requires scripts/Python/data/golden_txns.hex
 ```
 
-### Post-synthesis (gate-level) simulation
+### Post-synthesis simulation
 
 ```
 make psimulate
@@ -213,10 +213,10 @@ Use only when you really need extra MHz. It is time-consuming since it execute 1
 
 ## Firmware Overview
 
-Default firmware: `firmware/src/main.c` (bare-metal).
+Default firmware: `firmware/src/main.c`.
 Flow:
 
-1. Wait for the **uBUtton** on iCEBreaker.
+1. Wait for the **uBUtton** to be pressed on iCEBreaker.
 2. Init UART.
 3. **Weights** load from SPI flash to INT MEM1/2:
 
