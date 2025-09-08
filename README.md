@@ -65,7 +65,7 @@ MAIN\_ESTU/
 
 - Linux (Tested on Ubuntu24.04 and AlmaLinux 9.6)
 - **OSS-CAD-Suite** (Yosys, nextpnr-ice40, icepack, iceprog, etc.)
-- **RISC-V GNU Toolchain** (bare-metal **riscv32-unknown-elf**, Newlib)
+- **RISC-V GNU Toolchain** (**riscv32-unknown-elf**, Newlib)
 - Utilities: `python3` (with `numpy`, `pyserial`, `jupyter`), `minicom`, `make`, `gcc`
 
 > We use OSS-CAD version 2023-07-28
