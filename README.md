@@ -105,7 +105,7 @@ make build
 make prog
 
 # 3) Receive inference results via UART (3 MBaud)
-make listen    # edit the serial port in the Makefile if needed
+make listen    # edit the serial port in the Makefile if needed (in order to change the port for instance)
 ```
 
 ---
