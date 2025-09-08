@@ -142,10 +142,7 @@ Then:
 
 ```bash
 # Create a C array from flash.txt
-python3 flash/generate_carray.py scripts/Python/sim/mem/flash.txt > flash/flash_input.txt
-
-# Build the small tool (if not yet built)
-gcc -O2 -o flash/bin_gen flash/bin_gen.c
+python3 flash/generate_carray.py 
 
 # Produce the binary and program the external flash
 bash flash/flash_program.sh
