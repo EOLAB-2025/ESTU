@@ -221,11 +221,11 @@ Flow:
 3. **Weights** load from SPI flash to INT MEM1/2:
 
    ```c
-   DEV_WRITE(ESTU_WREN, 1);
+   DEV_WRITE(ESTU_WREN, 1); # Enable writing to SPRAM1
    read_spi(INT_MEM_1_ADDR, INT_MEM1_ID, WEIGHTS_SIZE_1);
-   DEV_WRITE(ESTU_WREN, 2);
+   DEV_WRITE(ESTU_WREN, 2); # Enable writing to SPRAM2
    read_spi(INT_MEM_2_ADDR, INT_MEM2_ID, WEIGHTS_SIZE_2);
-   DEV_WRITE(ESTU_WREN, 0); 
+   DEV_WRITE(ESTU_WREN, 0); #Disable CPU writing to the accelerator integer memories
    ```
 4. Configure accelerator and start first inference; then initialize the interrupt to repeat the inference at the selected inference frequency.
 
