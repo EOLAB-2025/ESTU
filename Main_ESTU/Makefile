@@ -19,7 +19,32 @@ env:
 
 build: 
 	yosys -p "synth_ice40 -dsp -abc9 -top soc -json output/$(filename).json -blif output/$(filename).blif -flatten" $(RTL_SRCS) -l output/yosys.log
-	nextpnr-ice40 --up5k --package sg48 --json output/$(filename).json --pcf $(pcf_file) --asc output/$(filename).asc --opt-timing --seed 59 -l output/nextpnr.log -v
+	nextpnr-ice40 --up5k --package sg48 --json output/$(filename).json --pcf $(pcf_file) --asc output/$(filename).asc --seed 90 -l output/nextpnr.log -v
+	icepack output/$(filename).asc output/$(filename).bin -s
+
+build-best:
+	@mkdir -p logs output/best
+	@rm -f output/best_freq.txt
+	yosys -p "synth_ice40 -dsp -abc9 -top soc -json output/$(filename).json -flatten" $(RTL_SRCS) -l output/yosys.log
+	@echo "Seed | Fmax (MHz)" > output/best_freq.txt
+	@for SEED in $$(seq 1 100); do \
+		echo ">>> Trying seed $$SEED..."; \
+		nextpnr-ice40 --up5k --package sg48 \
+			--json output/$(filename).json \
+			--pcf  $(pcf_file) \
+			--asc  output/best/$(filename)_seed$$SEED.asc \
+			--threads $$(nproc) --freq 24 \
+			--seed $$SEED --timing-allow-fail \
+			> logs/nextpnr_seed$$SEED.log 2>&1; \
+		FREQ=$$(grep "Max frequency for clock  'servant.wb_clk'" logs/nextpnr_seed$$SEED.log | \
+		sed -nE 's/.*clock[[:space:]]+'\''servant\.wb_clk'\''.*: ([0-9]+\.[0-9]+) MHz.*/\1/p'); \
+		[ -z "$$FREQ" ] && FREQ="0.00"; \
+		echo "$$SEED | $$FREQ" >> output/best_freq.txt; \
+	done; \
+	sort -nr -k3 -t'|' output/best_freq.txt | head -n 2 > output/best/best_seed.txt; \
+	BEST_SEED=$$(head -n1 output/best/best_seed.txt | cut -d '|' -f1 | tr -d ' '); \
+	cp output/best/$(filename)_seed$$BEST_SEED.asc output/$(filename).asc; \
+	echo "==> Best seed: $$BEST_SEED"
 	icepack output/$(filename).asc output/$(filename).bin -s
 
 check_json:
