@@ -3,6 +3,7 @@
 **ESTU** is a tiny SoC for edge AI that runs a **spiking transformer** on a Lattice **iCE40UP5K**.  
 It combines a microcode-programmable accelerator, a **SERV** RISC-V softcore, and configurable **encoding/decoding** slots.  
 This repo contains RTL, firmware, simulation testbenches, and scripts to build, simulate, flash, and run ESTU on hardware.
+[estu-scheme-repo Extract[2].pdf](https://github.com/user-attachments/files/22229779/estu-scheme-repo.Extract.2.pdf)
 
 ---
 
