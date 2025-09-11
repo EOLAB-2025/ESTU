@@ -289,3 +289,27 @@ DEV_WRITE(CLOCK_GATE_CTRL, 1);
 
 ## Citation
 
+## Acknowledgments
+
+We gratefully acknowledge the following projects:
+
+- **OSS-CAD-Suite (build)**  
+  <https://github.com/YosysHQ/oss-cad-suite-build>  
+
+- **SERV** 
+  <https://github.com/olofk/serv/tree/main>  
+
+- **BasicUART** 
+  <https://github.com/STjurny/BasicUART>  
+
+- **ice40_power** 
+  <https://github.com/tinyvision-ai-inc/ice40_power>  
+
+- **PicoRV32** 
+  <https://github.com/YosysHQ/picorv32>  
+
+- **SYNtzulu** 
+  <https://github.com/gianlucaleone/SYNtzulu>  
+
+
+
