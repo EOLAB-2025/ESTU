@@ -5,7 +5,7 @@ It combines a microcode-programmable accelerator, a **SERV** RISC-V softcore, an
 This repo contains RTL, firmware, simulation testbenches, and scripts to build, simulate, flash, and run ESTU on hardware.
 
 <figure>
-  <img src="imgs/estu_scheme.png" alt="Overview of the ESTU SoC" width="75%">
+  <img src="imgs/estu_scheme.jpg" alt="Overview of the ESTU SoC" width="75%">
   <figcaption><strong>Fig. 1.</strong> Overview of the ESTU SoC.</figcaption>
 </figure>
 
