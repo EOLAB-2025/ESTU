@@ -10,7 +10,7 @@ This repo contains RTL, firmware, simulation testbenches, and scripts to build, 
 </figure>
 
 <figure>
-  <img src="imgs/estu-dp.png" alt="ESTU dataflow" width="75%">
+  <img src="imgs/estu-dp.jpg" alt="ESTU dataflow" width="75%">
   <figcaption><strong>Fig. 2.</strong> ESTU dataflow.</figcaption>
 </figure>
 
