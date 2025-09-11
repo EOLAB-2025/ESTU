@@ -4,8 +4,16 @@
 It combines a microcode-programmable accelerator, a **SERV** RISC-V softcore, and configurable **encoding/decoding** slots.  
 This repo contains RTL, firmware, simulation testbenches, and scripts to build, simulate, flash, and run ESTU on hardware.
 
-![Overview of ESTU SoC](imgs/estu_scheme.png)
-![Overview of ESTU dataflow](imgs/estu-dp.png)
+<figure>
+  <img src="img/fig1.png" alt="Overview of the ESTU SoC" width="75%">
+  <figcaption><strong>Fig. 1.</strong> Overview of the ESTU SoC.</figcaption>
+</figure>
+
+<figure>
+  <img src="img/fig2.png" alt="ESTU dataflow" width="75%">
+  <figcaption><strong>Fig. 2.</strong> ESTU dataflow.</figcaption>
+</figure>
+
 ---
 
 ## Table of Contents
@@ -294,7 +302,7 @@ DEV_WRITE(CLOCK_GATE_CTRL, 1);
 
 We gratefully acknowledge the following projects:
 
-- **OSS-CAD-Suite (build)**  
+- **OSS-CAD-Suite**  
   <https://github.com/YosysHQ/oss-cad-suite-build>  
 
 - **SERV** 
