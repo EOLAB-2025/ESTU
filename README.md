@@ -21,6 +21,7 @@ This repo contains RTL, firmware, simulation testbenches, and scripts to build, 
 - [Makefile Targets](#makefile-targets)
 - [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
